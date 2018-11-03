@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/clickRecyclerView"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="30dp"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_form_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/tv_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:text="key" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/ic_launcher_background"
+            tools:ignore="VectorDrawableCompat" />
+
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:fontFamily="monospace"
+            android:text="Name"
+            android:textAllCaps="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tv_key"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:fontFamily="monospace"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="true"
+            android:layout_below="@id/tv_key"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="monospace"
+            android:textAllCaps="true"
+            android:text="Phone"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="true"
+            android:text="Phone" />
+
+        <TextView
+            android:id="@+id/tv_read"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEW1"
+            android:textStyle="bold"
+            android:shadowDx="12"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="textEnd"
+            android:shadowDy="12"
+            android:textColor="@color/colorToolbar"
+            android:visibility="gone"
+            android:shadowRadius="8"
+            android:gravity="end" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
